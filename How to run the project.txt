@@ -1,0 +1,49 @@
+The project consist of 2 folders. One folder named 'Complete_Codes' 
+contains the original anonymous block codes. These have to be run individually in 
+the SQLPlus command line using the path.
+
+The actual project is run using the files in the folder 'Project Codes'.
+The anonymous blocks in this file have static values because we were unable to
+implement it using user input values. Please read the file 'Project_Report.PDF' 
+which contains details of the project.
+
+Steps to run:
+1) Open SQLPlus from C:\oraclexe\app\oracle\product\10.2.0\server\BIN
+
+2) Enter username and password
+
+3) Run the tables first using the entire path of the file \Project_Codes\BloodBankTable.sql
+   
+   For example: @C:\Users\Desktop\DDB\Project_Codes; 
+   (You must give the ; or it will not run)
+   
+4) Then similarly Run the main.sql file.
+   
+5) You'll get 4 options. Each option can be selected only once using user input. 
+There can be nested options. To change options inside an option you have to open the codes
+and change them staticaly.
+You have to continously run the main.sql file again and again in the cmd
+to run all the 4 options given in the report which are Search, Delete, Update and Insert. 
+
+In detail steps:
+
+1) Say we entered the option 1 : SEARCH
+   Then it runs the file searchFile.sql
+   Inside the file there are 6 options which are staticaly given.
+   To change the options from 1 to 6 we have to open the file then
+   change ' opt := 1; ' at the first line to any other option that we want.
+   Each option runs anonymous block which has a different task of searching. 
+   
+2) When the first option of SEARCH has been executed the program will stop.
+   Now if we want to SEARCH using other options then we'll have to run the 
+   main.sql file again and select the option 1 again. And change the ' opt := 1; '
+   in the file searchFile.sql.
+   
+All the other options can be run like this. 
+
+Sorry for such a static method. But we couldn't find any better way of doing the project
+as it was for our lab course.
+Once you successfully run the entire project, you'll get a clear idea of it.
+The codes can be clearly understood if you see the complete codes and read the report.
+
+   
